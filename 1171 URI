@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	
+	int x=0;
+	int n;
+	int value[2001];
+	scanf("%d",&n);
+	while(n--)
+	{
+		scanf("%d",&x);
+		value[x]++;
+	}
+	for(int x=0; x<2001; x++)
+	{
+		if(value[x]>0)
+			printf("%d %d\n",x,value[x]);
+	}
+	return 0;
+}
